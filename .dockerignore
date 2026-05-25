@@ -1,0 +1,15 @@
+.git
+.github
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+.venv
+venv
+notebooks/
+data/
+presentation/
+report/
+tests/
+*.md
+*.ipynb

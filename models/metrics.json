@@ -1,0 +1,104 @@
+{
+  "best_model": "HistGradientBoosting (tuned)",
+  "validation": {
+    "RMSE": 473.6907415218327,
+    "MAE": 303.70113066073384,
+    "R2": 0.9431425516202753
+  },
+  "test": {
+    "RMSE": 503.67981586520574,
+    "MAE": 288.97190977816194,
+    "R2": 0.934834344159457
+  },
+  "baseline_results": [
+    {
+      "model": "Dummy mean",
+      "RMSE": 1989.5807341145405,
+      "MAE": 1748.429560151992,
+      "R2": -0.003045668261779877
+    },
+    {
+      "model": "Ridge",
+      "RMSE": 1574.7146337364902,
+      "MAE": 1347.0725716415275,
+      "R2": 0.371650462423181
+    },
+    {
+      "model": "Lasso",
+      "RMSE": 1574.5497891455789,
+      "MAE": 1348.0643366244954,
+      "R2": 0.3717820095603701
+    },
+    {
+      "model": "KNN",
+      "RMSE": 969.7529584618194,
+      "MAE": 678.3869007172517,
+      "R2": 0.7617023281035454
+    },
+    {
+      "model": "DecisionTree",
+      "RMSE": 690.2521605947626,
+      "MAE": 404.2915251038128,
+      "R2": 0.8792705777048263
+    },
+    {
+      "model": "RandomForest",
+      "RMSE": 495.89934291229815,
+      "MAE": 314.1396054441221,
+      "R2": 0.9376861422279744
+    },
+    {
+      "model": "ExtraTrees",
+      "RMSE": 543.6109191124817,
+      "MAE": 336.12139899490376,
+      "R2": 0.9251186067985454
+    },
+    {
+      "model": "HistGradientBoosting",
+      "RMSE": 491.71057650176095,
+      "MAE": 315.1144749076409,
+      "R2": 0.9387344025768073
+    }
+  ],
+  "tuned_results": [
+    {
+      "model": "RandomForest (tuned)",
+      "RMSE": 619.9407560724165,
+      "MAE": 460.0651278443274,
+      "R2": 0.9026136810942692
+    },
+    {
+      "model": "ExtraTrees (tuned)",
+      "RMSE": 822.6802417637125,
+      "MAE": 657.0016345877117,
+      "R2": 0.8285017443515184
+    },
+    {
+      "model": "HistGradientBoosting (tuned)",
+      "RMSE": 473.6907415218327,
+      "MAE": 303.70113066073384,
+      "R2": 0.9431425516202753
+    }
+  ],
+  "tuned_best_params": {
+    "RandomForest": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 1,
+      "model__max_features": "sqrt",
+      "model__max_depth": 20
+    },
+    "ExtraTrees": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 1,
+      "model__max_features": "sqrt",
+      "model__max_depth": 20
+    },
+    "HistGradientBoosting": {
+      "model__min_samples_leaf": 20,
+      "model__max_iter": 100,
+      "model__max_depth": 5,
+      "model__learning_rate": 0.05,
+      "model__l2_regularization": 0.0
+    }
+  }
+}
